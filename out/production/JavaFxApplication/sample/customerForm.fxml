@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sample.customerFormController">
+    <padding>
+        <Insets left="20" top="20"/>
+    </padding>
+    <children>
+        <Button fx:id="continueButton" contentDisplay="CENTER" layoutX="205.0" layoutY="288.0" mnemonicParsing="false"
+                onAction="#onContinueButtonClick" prefHeight="56.0" prefWidth="190.0" text="Continue">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Button>
+        <Label layoutX="182.0" layoutY="20.0" text="Please provide your details">
+            <font>
+                <Font size="20.0"/>
+            </font>
+        </Label>
+        <Button fx:id="homeButton" layoutX="7.0" layoutY="344.0" mnemonicParsing="false" onAction="#onHomeButtonClick">
+            <graphic>
+                <ImageView fitHeight="40.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../icons/house-1.png"/>
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <TextField fx:id="firstNameField" layoutX="65.0" layoutY="75.0" prefHeight="30.0" prefWidth="190.0"
+                   promptText="First name">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </TextField>
+        <TextField fx:id="lastNameField" layoutX="347.0" layoutY="75.0" prefHeight="30.0" prefWidth="190.0"
+                   promptText="Last name">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </TextField>
+        <TextField fx:id="emailAddressField" layoutX="64.0" layoutY="130.0" prefHeight="30.0" prefWidth="190.0"
+                   promptText="Email address">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </TextField>
+        <TextField fx:id="countryField" layoutX="346.0" layoutY="130.0" prefHeight="30.0" prefWidth="190.0"
+                   promptText="Country">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </TextField>
+        <TextField fx:id="addressLine1Field" layoutX="65.0" layoutY="185.0" prefHeight="30.0" prefWidth="190.0"
+                   promptText="Address line 1">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </TextField>
+        <TextField fx:id="addressLine2Field" layoutX="346.0" layoutY="185.0" prefHeight="30.0" prefWidth="190.0"
+                   promptText="Address line 2">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </TextField>
+        <TextField fx:id="postcodeField" layoutX="64.0" layoutY="238.0" prefHeight="30.0" prefWidth="190.0"
+                   promptText="Postcode">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </TextField>
+        <TextField fx:id="phoneNumberField" layoutX="347.0" layoutY="238.0" prefHeight="30.0" prefWidth="190.0"
+                   promptText="Phone number">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </TextField>
+
+
+    </children>
+
+</AnchorPane>

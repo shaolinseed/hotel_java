@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720"
+            prefWidth="841.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sample.customerBookingsController">
+    <padding>
+        <Insets left="20" top="20"/>
+    </padding>
+    <children>
+        <Button fx:id="cancelButton" contentDisplay="CENTER" layoutX="592.0" layoutY="624.0" mnemonicParsing="false"
+                onAction="#onCancelButtonClick" prefHeight="70.0" prefWidth="217.0" text="Cancel booking"/>
+        <Button fx:id="searchButton" contentDisplay="CENTER" layoutX="341.0" layoutY="119.0" mnemonicParsing="false"
+                onAction="#listBookings" prefHeight="37.0" prefWidth="174.0" text="Search for booking"
+                AnchorPane.bottomAnchor="564.0"/>
+        <TableView fx:id="bookingsTableView" layoutY="167.0" onMouseClicked="#showItem" prefHeight="343.0"
+                   prefWidth="859.0" AnchorPane.bottomAnchor="230.0" AnchorPane.leftAnchor="-20.0"
+                   AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="147.0">
+            <columns>
+                <TableColumn fx:id="bookingId" prefWidth="130.0" text="BookingId"/>
+                <TableColumn fx:id="startDate" prefWidth="130.0" text="startDate"/>
+                <TableColumn fx:id="endDate" prefWidth="130.0" text="endDate"/>
+                <TableColumn fx:id="paymentMethod" prefWidth="130.0" text="paymentMethod"/>
+                <TableColumn fx:id="bookingStatus" minWidth="130.0" prefWidth="100.0" text="bookingStatus"/>
+            </columns>
+        </TableView>
+        <TextField fx:id="startDateField" layoutX="152.0" layoutY="539.0" prefHeight="25.0" prefWidth="130.0"
+                   promptText=""/>
+        <TextField fx:id="endDateField" layoutX="152.0" layoutY="580.0" prefHeight="25.0" prefWidth="130.0"/>
+        <Button fx:id="homeButton" contentDisplay="TOP" layoutX="21.0" layoutY="14.0" mnemonicParsing="false"
+                onAction="#onHomeButtonClick" prefHeight="70.0" prefWidth="190.0" text="Return to customer home">
+            <graphic>
+                <ImageView fitHeight="47.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../icons/house-1.png"/>
+                    </image>
+                </ImageView>
+            </graphic>
+            <font>
+                <Font name="System Bold" size="12.0"/>
+            </font>
+        </Button>
+        <TextField fx:id="thisBookingField" layoutX="300.0" layoutY="64.0" prefHeight="30.0" prefWidth="243.0"
+                   promptText="Booking ID">
+            <font>
+                <Font size="20.0"/>
+            </font>
+        </TextField>
+        <Label layoutX="293.0" layoutY="24.0" text="Please enter your booking ID">
+            <font>
+                <Font size="20.0"/>
+            </font>
+        </Label>
+        <Label layoutX="49.0" layoutY="497.0" prefHeight="20.0" prefWidth="162.0" text="Change booking details">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Label>
+        <TextField fx:id="paymentMethodField" layoutX="152.0" layoutY="656.0" prefHeight="25.0" prefWidth="130.0"/>
+        <Label layoutX="59.0" layoutY="542.0" text="Check in date">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Label>
+        <Label layoutX="49.0" layoutY="583.0" text="Check out date">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Label>
+        <Label layoutX="36.0" layoutY="659.0" text="Payment method">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Label>
+        <Button fx:id="updateBookingButton" contentDisplay="CENTER" layoutX="288.0" layoutY="650.0"
+                mnemonicParsing="false" onAction="#onUpdateButtonClick" prefHeight="37.0" prefWidth="107.0"
+                text="Update booking"/>
+    </children>
+
+</AnchorPane>

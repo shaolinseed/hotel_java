@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sample.managerCheckInController">
+    <padding>
+        <Insets left="20" top="20"/>
+    </padding>
+    <children>
+        <Button fx:id="checkInButton" contentDisplay="CENTER" layoutX="205.0" layoutY="288.0" mnemonicParsing="false"
+                onAction="#onCheckInButtonClick" prefHeight="56.0" prefWidth="190.0" text="Check in">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Button>
+        <Label layoutX="200.0" layoutY="39.0" text="Check Customer In">
+            <font>
+                <Font size="24.0"/>
+            </font>
+        </Label>
+        <Button fx:id="homeButton" layoutX="7.0" layoutY="344.0" mnemonicParsing="false" onAction="#onHomeButtonClick">
+            <graphic>
+                <ImageView fitHeight="40.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../icons/house-1.png"/>
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <TextField fx:id="bookingIdField" layoutX="343.0" layoutY="170.0" prefHeight="30.0" prefWidth="111.0"
+                   promptText="Booking ID"/>
+
+        <Label layoutX="124.0" layoutY="170.0" text="Customer Booking ID:">
+            <font>
+                <Font size="22.0"/>
+            </font>
+        </Label>
+        <Label fx:id="checkInConfirmation" layoutX="157.0" layoutY="230.0" prefHeight="27.0" prefWidth="287.0">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Label>
+
+
+    </children>
+
+</AnchorPane>

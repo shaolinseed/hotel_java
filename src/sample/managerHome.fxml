@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.managerHomeController">
+    <padding>
+        <Insets left="20" top="20" />
+    </padding>
+   <children>
+      <Button fx:id="manageRoomsButton" contentDisplay="CENTER" layoutX="45.0" layoutY="144.0" mnemonicParsing="false" onAction="#onManageRoomsButtonClick" prefHeight="56.0" prefWidth="190.0" text="Manage rooms" />
+      <Button fx:id="homeButton" layoutX="7.0" layoutY="344.0" mnemonicParsing="false" onAction="#onHomeButtonClick">
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/house-1.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+
+      <Button fx:id="manageBookingsButton" contentDisplay="CENTER" layoutX="45.0" layoutY="37.0" mnemonicParsing="false" onAction="#onManageBookingsButtonClick" prefHeight="56.0" prefWidth="190.0" text="Manage bookings" />
+      <Button fx:id="checkOutButton" contentDisplay="CENTER" layoutX="346.0" layoutY="144.0" mnemonicParsing="false" onAction="#onCheckOutButtonClick" prefHeight="56.0" prefWidth="190.0" text="Check out" />
+      <Button fx:id="checkInButton" contentDisplay="CENTER" layoutX="346.0" layoutY="37.0" mnemonicParsing="false" onAction="#onCheckInButtonClick" prefHeight="56.0" prefWidth="190.0" text="Check in" />
+      <Button fx:id="manageServicesButton" contentDisplay="CENTER" layoutX="45.0" layoutY="255.0" mnemonicParsing="false" onAction="#onManageServicesButtonClick" prefHeight="56.0" prefWidth="190.0" text="Manage services" />
+      <Button fx:id="reportsButton" onAction="#oneReportsButtonClick" layoutX="346.0" layoutY="255.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="190.0" text="Reports" />
+   </children>
+
+</AnchorPane>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sample.customerNewBookingController">
+    <padding>
+        <Insets left="20" top="20"/>
+    </padding>
+    <children>
+        <Button fx:id="proceedButton" contentDisplay="CENTER" layoutX="443.0" layoutY="330.0" mnemonicParsing="false"
+                onAction="#onProceedButtonClick" prefHeight="43.0" prefWidth="144.0" text="Proceed with booking"/>
+
+        <Label layoutX="227.0" layoutY="14.0" text="Customer receipt">
+            <font>
+                <Font size="20.0"/>
+            </font>
+        </Label>
+
+        <ImageView fitHeight="43.0" fitWidth="43.0" layoutX="227.0" layoutY="44.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@../icons/calendar.png"/>
+            </image>
+        </ImageView>
+
+
+        <Label layoutX="182.0" layoutY="229.0" text="Selected check in date:"/>
+        <Label layoutX="182.0" layoutY="285.0" text="Selected room type:"/>
+        <Label layoutX="182.0" layoutY="249.0" text="Selected check out date:"/>
+        <Button fx:id="homeButton" layoutX="7.0" layoutY="344.0" mnemonicParsing="false" onAction="#onHomeButtonClick">
+            <graphic>
+                <ImageView fitHeight="40.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../icons/house-1.png"/>
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <ImageView fitHeight="43.0" fitWidth="43.0" layoutX="286.0" layoutY="44.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@../icons/hotel-double-bed.png"/>
+            </image>
+        </ImageView>
+        <ImageView fitHeight="43.0" fitWidth="43.0" layoutX="337.0" layoutY="44.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@../icons/hotel-single-bed.png"/>
+            </image>
+        </ImageView>
+        <Label layoutX="181.0" layoutY="268.0" text="Number of nights:"/>
+        <Label fx:id="numberOfNightsLabel" layoutX="282.0" layoutY="266.0" prefHeight="17.0" prefWidth="78.0"
+               textFill="#f50f0f"/>
+        <Label layoutX="182.0" layoutY="306.0" text="Payment method: "/>
+        <Label fx:id="paymentMethodLabel" layoutX="283.0" layoutY="308.0" prefHeight="17.0" prefWidth="86.0"
+               textFill="#f50f0f"/>
+    </children>
+
+</AnchorPane>

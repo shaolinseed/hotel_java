@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.customer1Controller">
+    <padding>
+        <Insets left="20" top="20" />
+    </padding>
+   <children>
+      <Button fx:id="manageBookingButton" contentDisplay="CENTER" layoutX="205.0" layoutY="172.0" mnemonicParsing="false" onAction="#onManageBookingClick" prefHeight="56.0" prefWidth="190.0" text="Manage an existing booking" />
+      <Button fx:id="homeButton" layoutX="7.0" layoutY="344.0" mnemonicParsing="false" onAction="#onHomeButtonClick">
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/house-1.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+
+      <Button fx:id="createBookingButton" contentDisplay="CENTER" layoutX="205.0" layoutY="83.0" mnemonicParsing="false" onAction="#onCreateButtonClick" prefHeight="56.0" prefWidth="190.0" text="Create a new booking" />
+      <Button fx:id="orderServiceButton" contentDisplay="CENTER" layoutX="205.0" layoutY="262.0" mnemonicParsing="false" onAction="#onOrderServiceButtonClick" prefHeight="56.0" prefWidth="190.0" text="Order a service" />
+   </children>
+
+</AnchorPane>

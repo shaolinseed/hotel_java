@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sample.customerOrderServiceController">
+    <padding>
+        <Insets left="20" top="20"/>
+    </padding>
+    <children>
+        <Button fx:id="orderServiceButton" contentDisplay="CENTER" layoutX="240.0" layoutY="311.0"
+                mnemonicParsing="false" onAction="#onOrderServiceButtonClick" prefHeight="43.0" prefWidth="144.0"
+                text="Order service"/>
+        <ComboBox fx:id="serviceTypeCombo" layoutX="180.0" layoutY="185.0" prefHeight="30.0" prefWidth="263.0"
+                  promptText="Service type"/>
+        <Label layoutX="138.0" layoutY="26.0" text="What service would you like to order">
+            <font>
+                <Font size="20.0"/>
+            </font>
+        </Label>
+        <Label layoutX="180.0" layoutY="231.0" prefHeight="36.0" prefWidth="112.0" text="Selected service">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Label>
+        <Label fx:id="serviceTypeLabel" layoutX="292.0" layoutY="239.0" prefHeight="17.0" prefWidth="112.0" text=""
+               textFill="#f50f0f">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Label>
+        <Label layoutX="180.0" layoutY="273.0" text="Service price">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Label>
+        <Label fx:id="servicePriceLabel" layoutX="271.0" layoutY="275.0" prefHeight="17.0" prefWidth="144.0" text=""
+               textFill="#f50f0f">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Label>
+        <Button fx:id="homeButton" layoutX="7.0" layoutY="344.0" mnemonicParsing="false" onAction="#onHomeButtonClick">
+            <graphic>
+                <ImageView fitHeight="40.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../icons/house-1.png"/>
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <TextField fx:id="bookingIdField" layoutX="269.0" layoutY="74.0"/>
+        <Label layoutX="177.0" layoutY="72.0" prefHeight="30.0" prefWidth="84.0" text="Booking ID:">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Label>
+        <ImageView fitHeight="54.0" fitWidth="50.0" layoutX="368.0" layoutY="126.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@../icons/taxi.png"/>
+            </image>
+        </ImageView>
+        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="300.0" layoutY="126.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@../icons/spa-sign.png"/>
+            </image>
+        </ImageView>
+        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="236.0" layoutY="126.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@../icons/beer-mug.png"/>
+            </image>
+        </ImageView>
+        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="177.0" layoutY="126.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@../icons/restaurant-eating-set.png"/>
+            </image>
+        </ImageView>
+        <Label fx:id="serviceConfirmationLabel" layoutX="223.0" layoutY="365.0" prefHeight="20.0" prefWidth="177.0"
+               textFill="#f50f0f">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Label>
+    </children>
+
+</AnchorPane>

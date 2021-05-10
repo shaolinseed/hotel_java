@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720"
+            prefWidth="1080" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sample.managerRoomsController">
+    <padding>
+        <Insets left="20" top="20"/>
+    </padding>
+    <children>
+        <Button fx:id="updateRoomButton" contentDisplay="CENTER" layoutX="273.0" layoutY="669.0" mnemonicParsing="false"
+                onAction="#onUpdateRoomButtonClick" prefHeight="30.0" prefWidth="153.0" text="Update room details"/>
+        <Button layoutX="754.0" layoutY="573.0" onAction="#listRooms" prefHeight="76.0" prefWidth="229.0"
+                text="Show all" GridPane.columnIndex="2" GridPane.rowIndex="6"/>
+        <Button fx:id="updatePriceButton" contentDisplay="CENTER" layoutX="481.0" layoutY="669.0"
+                mnemonicParsing="false" onAction="#onUpdatePriceButtonClick" prefHeight="30.0" prefWidth="139.0"
+                text="Update room prices" AnchorPane.bottomAnchor="21.0"/>
+        <TableView fx:id="roomsTableView" layoutX="21.0" layoutY="134.0" onMouseClicked="#showItem" prefHeight="319.0"
+                   prefWidth="1079.0" AnchorPane.bottomAnchor="212.0" AnchorPane.leftAnchor="1.0"
+                   AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="94.0">
+            <columns>
+                <TableColumn fx:id="roomNumber" prefWidth="130.0" text="roomNumber"/>
+                <TableColumn fx:id="roomType" prefWidth="130.0" text="roomType"/>
+                <TableColumn fx:id="status" prefWidth="130.0" text="status"/>
+                <TableColumn fx:id="pricePerNight" prefWidth="130.0" text="pricePerNight"/>
+            </columns>
+        </TableView>
+        <Label layoutX="466.0" layoutY="524.0" prefHeight="25.0" prefWidth="190.0"
+               text="Set price for different room types"/>
+        <ComboBox fx:id="roomTypeCombo" layoutX="474.0" layoutY="560.0" prefHeight="30.0" prefWidth="153.0"
+                  promptText="Room type"/>
+        <TextField fx:id="setPriceField" layoutX="486.0" layoutY="628.0" prefHeight="25.0" prefWidth="130.0"
+                   promptText="New price"/>
+
+
+        <Label fx:id="roomNumberLabel" layoutX="129.0" layoutY="552.0" prefHeight="25.0" prefWidth="130.0"/>
+        <TextField fx:id="roomStatusField" layoutX="129.0" layoutY="630.0" prefHeight="25.0" prefWidth="130.0"
+                   promptText="Room status"/>
+        <Label fx:id="pricePerNightLabel" layoutX="129.0" layoutY="671.0" prefHeight="25.0" prefWidth="130.0"/>
+        <Label fx:id="roomTypeLabel0" layoutX="129.0" layoutY="590.0" prefHeight="25.0" prefWidth="130.0"/>
+
+        <Button fx:id="homeButton" contentDisplay="TOP" layoutX="21.0" layoutY="14.0" mnemonicParsing="false"
+                onAction="#onHomeButtonClick" prefHeight="70.0" prefWidth="190.0" text="Manager home">
+            <graphic>
+                <ImageView fitHeight="47.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../icons/house-1.png"/>
+                    </image>
+                </ImageView>
+            </graphic>
+            <font>
+                <Font name="System Bold" size="12.0"/>
+            </font>
+        </Button>
+        <Label fx:id="roomTypeLabel" layoutX="499.0" layoutY="607.0" prefHeight="17.0" prefWidth="103.0"
+               textFill="#e10000"/>
+        <Label fx:id="roomTypeLabel1" layoutX="38.0" layoutY="556.0" prefHeight="17.0" prefWidth="80.0"
+               text="Room number"/>
+        <Label fx:id="roomTypeLabel11" layoutX="52.0" layoutY="594.0" prefHeight="17.0" prefWidth="66.0"
+               text="Room type"/>
+        <Label fx:id="roomTypeLabel111" layoutX="45.0" layoutY="635.0" prefHeight="17.0" prefWidth="80.0"
+               text="Room status"/>
+        <Label fx:id="roomTypeLabel1111" layoutX="45.0" layoutY="675.0" prefHeight="17.0" prefWidth="80.0"
+               text="Price per night"/>
+        <Label fx:id="roomTypeLabel11111" layoutX="85.0" layoutY="528.0" prefHeight="17.0" prefWidth="103.0"
+               text="Current selection"/>
+
+    </children>
+
+</AnchorPane>

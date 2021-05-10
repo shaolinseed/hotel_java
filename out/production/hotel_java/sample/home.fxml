@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.homeController">
+    <padding>
+        <Insets left="20" top="20" />
+    </padding>
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="225.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/building-1.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e8e8e8" height="135.0" layoutX="121.0" layoutY="260.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="359.0" />
+      <Label alignment="CENTER" layoutX="200.0" layoutY="173.0" text="Welcome to Hotel RMNY">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="customerButton" layoutX="260.0" layoutY="209.0" mnemonicParsing="false" onAction="#onCustomerButtonClick" prefHeight="42.0" prefWidth="80.0" text="Customer" textAlignment="CENTER" />
+      <Label layoutX="148.0" layoutY="303.0" prefHeight="25.0" prefWidth="61.0" text="Username:">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Label layoutX="151.0" layoutY="344.0" text="Password:">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <ImageView fitHeight="42.0" fitWidth="50.0" layoutX="211.0" layoutY="209.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/multiple-man.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="247.0" layoutY="264.0" text="Manager login:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="passwordField" layoutX="219.0" layoutY="341.0" promptText="Password" />
+      <TextField fx:id="usernameField" layoutX="219.0" layoutY="303.0" promptText="Username" />
+      <Button fx:id="loginButton" layoutX="384.0" layoutY="341.0" mnemonicParsing="false" onAction="#onLoginButtonClick" text="Login" />
+      <Label fx:id="loginStatusLabel" alignment="CENTER" layoutX="189.0" layoutY="366.0" prefHeight="25.0" prefWidth="224.0" textFill="#eb0000">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

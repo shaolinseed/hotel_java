@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sample.bookingConfirmationController">
+    <padding>
+        <Insets left="20" top="20"/>
+    </padding>
+    <children>
+        <Label layoutX="178.0" layoutY="35.0" text="Booking confirmed!">
+            <font>
+                <Font size="28.0"/>
+            </font>
+        </Label>
+        <ImageView fitHeight="43.0" fitWidth="43.0" layoutX="216.0" layoutY="110.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@../icons/calendar.png"/>
+            </image>
+        </ImageView>
+        <Button fx:id="homeButton" layoutX="252.0" layoutY="267.0" mnemonicParsing="false"
+                onAction="#onHomeButtonClick">
+            <graphic>
+                <ImageView fitHeight="80.0" fitWidth="166.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../icons/house-1.png"/>
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <ImageView fitHeight="43.0" fitWidth="43.0" layoutX="275.0" layoutY="110.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@../icons/hotel-double-bed.png"/>
+            </image>
+        </ImageView>
+        <ImageView fitHeight="43.0" fitWidth="43.0" layoutX="326.0" layoutY="110.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@../icons/hotel-single-bed.png"/>
+            </image>
+        </ImageView>
+        <Label fx:id="bookingIdLabel" layoutX="287.0" layoutY="210.0" prefHeight="50.0" prefWidth="62.0"
+               textAlignment="CENTER" textFill="#1172f5">
+            <font>
+                <Font size="34.0"/>
+            </font>
+        </Label>
+        <Label layoutX="176.0" layoutY="75.0" text="Enjoy your stay at Hotel Anglia!">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Label>
+        <Button fx:id="displayBookingButton" layoutX="215.0" layoutY="170.0" mnemonicParsing="false"
+                onAction="#onDisplayBookingButtonCLick" text="Display your booking  id">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Button>
+    </children>
+
+</AnchorPane>
